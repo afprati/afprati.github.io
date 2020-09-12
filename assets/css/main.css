@@ -37,46 +37,6 @@ body {
 		transition: none !important;
 	}
 
-.left-side,
-.right-side {
-	display: inline-block;
-	vertical-align: top;
-}
-.left-side {
-	width: 30%;
-	padding-right: 5%;
-	padding-bottom: 2rem;
-}
-.right-side {
-	width: 65%;
-}
-
-.left-side img {
-	width: 100%;
-	height: auto;
-	padding: 0 0 1rem 0;
-}
-
-@media screen and (max-width: 980px) {
-	.left-side,
-	.right-side {
-		width: 100%;
-		padding-right: 0;
-	}
-	.left-side img {
-		width: auto;
-		height: auto;
-		float: left;
-		padding: 0 1rem 1rem 0;
-	}
-}
-@media screen and (max-width: 736px) {
-	.left-side img {
-		float: none;
-		padding: 0 0 1rem 0;
-	}
-}
-
 /* Header */
 body {
 	background-color: #1e1f23;
@@ -175,16 +135,17 @@ body {
 			background-color: rgba(0, 0, 0, 0.125);
 		}
 
-	.wrapper > header p {
-		text-transform: uppercase;
-		font-weight: 300;
-		font-size: .8rem;
-		letter-spacing: .25rem;
-		margin: 0;
-	}
-
 	.wrapper > header.special {
 		padding: 3rem 3rem 0 3rem;
+	}
+	.wrapper > header.special h1 {
+		margin-bottom: 2rem;
+	}
+	.wrapper > header.special img {
+		width: auto;
+		height: auto;
+		float: left;
+		padding: 0 1rem 1rem 0;
 	}
 	.wrapper .content {
 		padding: 3rem;
@@ -202,8 +163,9 @@ body {
 			.wrapper > header.special {
 				padding: 1rem 1rem 0 1rem;
 			}
-				.wrapper > header h1 {
-					font-size: 1.5rem;
+				.wrapper > header.special img {
+					float: none;
+					padding: 0 0 1rem 0;
 				}
 			.wrapper .content {
 				padding: 1rem;
