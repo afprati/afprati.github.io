@@ -141,11 +141,27 @@ body {
 	.wrapper > header.special h1 {
 		margin-bottom: 2rem;
 	}
+	.wrapper > header.special .photo-contact {
+		float: left;
+	}
 	.wrapper > header.special img {
 		width: auto;
 		height: auto;
-		float: left;
-		padding: 0 1rem 1rem 0;
+		padding: 0 2rem 0 0;
+	}
+	.wrapper > header.special .contact {
+		padding: 0 2rem 0 0;
+		text-align: center;
+	}
+	.wrapper > header.special .contact a {
+		margin: 0 1.5rem;
+		padding: 0;
+		text-align: center;
+		color: #555;
+	}
+	.wrapper > header.special .contact a:hover {
+		color: #000;
+		text-decoration: none;
 	}
 	.wrapper .content {
 		padding: 3rem;
@@ -163,9 +179,25 @@ body {
 			.wrapper > header.special {
 				padding: 1rem 1rem 0 1rem;
 			}
-				.wrapper > header.special img {
-					float: none;
-					padding: 0 0 1rem 0;
+				.wrapper > header.special .photo-contact {
+					width: 100%;
+					padding-bottom: 2rem;
+				}
+				.wrapper > header.special .photo-contact img {
+					width: 66%;
+					float: left;
+				}
+				.wrapper > header.special .contact {
+					padding: 0;
+				}
+				.wrapper > header.special .contact a {
+					width: 33%;
+					height: 33%;
+					margin: 1rem 0;
+					float: left;
+				}
+				.wrapper > header.special #objective {
+					clear: both;
 				}
 			.wrapper .content {
 				padding: 1rem;
@@ -201,3 +233,14 @@ body {
 		}
 
 	}
+
+.show-print {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
