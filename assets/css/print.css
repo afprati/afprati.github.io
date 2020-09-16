@@ -1,0 +1,70 @@
+@media screen {
+	.show-print {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
+	}
+}
+
+@media print {
+	html {
+		font-size: 8pt;
+	}
+	body {
+		background-color: transparent;
+		padding-top: 0;
+	}
+	body:after {
+		display: none;
+	}
+	#main .inner {
+		width: 8in;
+		margin: 0;
+		background: none;
+		box-shadow: none;
+		border-radius: 0;
+		border: 0;
+	}
+
+	.wrapper #title {
+		display: inline-block;
+		width: 50%;
+		float: left;
+	}
+
+	.wrapper > header.special {
+		padding: 0;
+	}
+	.wrapper > header.special .photo-contact {
+		width: 25%;
+		margin-bottom: 0;
+		float: right;
+	}
+	.wrapper > header.special .photo-contact .photo,
+	.wrapper > header.special #objective {
+		display: none;
+	}
+	.wrapper > header.special .photo-contact .contact a {
+		margin: 0 0 .5rem 0;
+		float: left;
+		clear: both;
+	}
+	.wrapper > header.special .photo-contact .contact a .icon {
+		margin-right: 1rem;
+		color: #111;
+	}
+
+	.wrapper .content {
+		padding: 0;
+		clear: both;
+	}
+
+	#footer {
+		display: none;
+	}
+}
