@@ -142,10 +142,11 @@ body {
 		margin-bottom: 2rem;
 	}
 	.wrapper > header.special .photo-contact {
+		margin-bottom: 1rem;
 		float: left;
 	}
 	.wrapper > header.special img {
-		width: auto;
+		width: 400px;
 		height: auto;
 		padding: 0 2rem 0 0;
 	}
@@ -177,7 +178,7 @@ body {
 		}
 		@media screen and (max-width: 736px) {
 			.wrapper > header.special {
-				padding: 1rem 1rem 0 1rem;
+				padding: 1rem 1rem 2rem 1rem;
 			}
 				.wrapper > header.special .photo-contact {
 					width: 100%;
@@ -185,6 +186,7 @@ body {
 				}
 				.wrapper > header.special .photo-contact img {
 					width: 66%;
+					padding-right: 0;
 					float: left;
 				}
 				.wrapper > header.special .contact {
@@ -234,13 +236,15 @@ body {
 
 	}
 
-.show-print {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
+@media screen {
+	.show-print {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
+	}
 }
