@@ -64,6 +64,18 @@
 		clear: both;
 	}
 
+	.wrapper .content a {
+		color: #111 !important;
+	}
+	:target {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: transparent;
+	}
+	.wrapper .content a .icon {
+		display: none;
+	}
+
 	#footer {
 		display: none;
 	}
