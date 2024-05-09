@@ -56,8 +56,7 @@ body {
 		-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 		transition: opacity 1.5s ease-in-out, visibility 1.5s;
 		content: '';
-		background-image: url(../../images/bg.jpg);
-		/* Background image from: https://www.flickr.com/photos/adam_jones/41921307472/ */
+		background-image: url(../../images/ashok_chaitya.jpg);
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
