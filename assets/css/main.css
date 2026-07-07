@@ -140,14 +140,27 @@ body {
 	.wrapper > header.special h1 {
 		margin-bottom: 2rem;
 	}
+	.wrapper > header.special .align-left {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+	}
+	.wrapper > header.special .align-left > h1 {
+		flex: 0 0 100%;
+		text-align: left;
+	}
 	.wrapper > header.special .photo-contact {
 		margin-bottom: 1rem;
-		float: left;
+		flex: 0 0 432px;
 	}
 	.wrapper > header.special img {
 		width: 400px;
 		height: auto;
 		padding: 0 2rem 0 0;
+	}
+	.wrapper > header.special #objective {
+		flex: 1 1 300px;
+		min-width: 0;
 	}
 	.wrapper > header.special .contact {
 		padding: .5rem 2rem 0 0;
@@ -179,8 +192,12 @@ body {
 			.wrapper > header.special {
 				padding: 1rem 1rem 2rem 1rem;
 			}
+				.wrapper > header.special .align-left {
+					flex-direction: column;
+				}
 				.wrapper > header.special .photo-contact {
 					width: 100%;
+					flex: 1 1 100%;
 					padding-bottom: 2rem;
 				}
 				.wrapper > header.special .photo-contact img {
@@ -199,6 +216,7 @@ body {
 				}
 				.wrapper > header.special #objective {
 					clear: both;
+					flex-basis: 100%;
 				}
 			.wrapper .content {
 				padding: 1rem;
